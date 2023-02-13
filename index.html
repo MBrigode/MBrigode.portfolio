@@ -96,34 +96,24 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid"><hr></div>
+    <div class="container-fluid">
+      <hr>
+    </div>
 
     <div class="container-fluid bg-primary text-black">
       <div class="row justify-content-center">
-        <form id="contact" name="contact" netlify>
-          <p class="row justify-content-center">
-            <h1>Contact</h1>
+        <form name="contact" method="POST" data-netlify="true">
+          <p>
+            <label>Your Name: <input type="text" name="name" /></label>
           </p>
-          <hr>
-          <p class="row justify-content-center">
-            <label>Name:
-            </p>
-          <p class="row justify-content-center">
-            <input type="text" name="name"></label>
+          <p>
+            <label>Your Email: <input type="email" name="email" /></label>
           </p>
-          <p class="row justify-content-center">
-            <label>Email:
-            </p>
-          <p class="row justify-content-center">
-            <input type="email" name="email"></label>
+
+          <p>
+            <label>Message: <textarea name="message"></textarea></label>
           </p>
-          <p class="row justify-content-center">
-            <label>Message:
-            </p>
-          <p class="row justify-content-center">
-            <input type="message" name="message"></label>
-          </p>
-          <p class="row justify-content-center">
+          <p>
             <button type="submit">Send</button>
           </p>
         </form>
